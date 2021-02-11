@@ -1,4 +1,4 @@
-PROJECT NAME
+# PROJECT NAME
 Project Description
 Here goes your awesome project description!
 
