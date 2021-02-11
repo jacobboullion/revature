@@ -1,34 +1,46 @@
-# PROJECT NAME
-Project Description
-Here goes your awesome project description!
+# PROJECT 1
 
-Technologies Used
-Tech 1 - version 1.0
-Tech 2 - version 2.0
-Tech 3 - version 3.0
-Features
+## Project Description
+
+This project takes in large amounts of wikipedia page view and clickstream data in order to answer some questions and do analysis based on this data.
+
+## Technologies Used
+
+* Hive 
+* YARN
+* MapReduce
+* HDFS
+* DBeaver
+
+## Features
+
 List of features ready and TODOs for future development
+* Loads data from local directory
+* Makes tables for the csv data collected locally 
+* Queries run on these tables and get information
 
-Awesome feature 1
-Awesome feature 2
-Awesome feature 3
 To-do list:
+* Take data from hdfs
+* Simplify number of Queries
 
-Wow improvement to be done 1
-Wow improvement to be done 2
-Getting Started
-(include git clone command) (include all environment setup steps)
+## Getting Started
+   
+(include git clone command)
+(include all environment setup steps)
+* git clone the repo
+* install hdfs, yarn, and hive
+* start hive server with command: hiveserver2
+* You can connect to the server using a program like DBeaver or in beeline using: beeline -u jdbc:hive2://localhost:10000
+* Once your connected you can start using the HQL queries in the provided script 
 
-Be sure to include BOTH Windows and Unix command
-Be sure to mention if the commands only work on a specific platform (eg. AWS, GCP)
+## Usage
 
-All the code required to get started
-Images of what it should look like
-Usage
-Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
+> You can run the queries like this 
 
-Contributors
-Here list the people who have contributed to this project. (ignore this section, if its a solo project)
+## Contributors
 
-License
-This project uses the following license: <license_name>.
+> Here list the people who have contributed to this project. (ignore this section, if its a solo project)
+
+## License
+
+This project uses the following license: [<license_name>](<link>).
