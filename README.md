@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This project takes in large amounts of wikipedia page view and clickstream data in order to answer some questions and do analysis based on this data.
+This project takes in large amounts of wikipedia page view and clickstream data in order to answer some questions and do analysis based on this data.It does this by using HQL and other technologies like MapReduce to effienctly read through the data. 
 
 ## Technologies Used
 
@@ -32,15 +32,13 @@ To-do list:
 * start hive server with command: hiveserver2
 * You can connect to the server using a program like DBeaver or in beeline using: beeline -u jdbc:hive2://localhost:10000
 * Once your connected you can start using the HQL queries in the provided script 
+* The Wikipedia analytics information that is used as input to the programs can be found at: https://dumps.wikimedia.org/other/analytics/
 
 ## Usage
 
-> You can run the queries like this 
+> You can run the queries like this (SELECT page_title, SUM(count_views) AS views FROM PAGEVIEW GROUP BY page_title ORDER BY VIEWS DESC LIMIT 20) after forming the tables and analyze the results from the tables stored in the hive warehouse.
 
 ## Contributors
 
-> Here list the people who have contributed to this project. (ignore this section, if its a solo project)
-
 ## License
-
-This project uses the following license: [<license_name>](<link>).
+> No lincense
